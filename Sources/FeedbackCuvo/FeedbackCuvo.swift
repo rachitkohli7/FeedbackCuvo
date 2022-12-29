@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct FeedbackCuvo {
+public struct FeedbackCuvo: View {
 
     public init() {
     }
@@ -11,7 +11,7 @@ public struct FeedbackCuvo {
     @State private var isExpanded = false;
     @State private var chosenCategory = "";
     var categories: [String] = ["Display", "Performance", "Other"]
-    var body: some View {
+    public var body: some View {
         NavigationView{
             Form{
                 Section(header: Text("Choose rating")){
